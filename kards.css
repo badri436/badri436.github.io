@@ -1,0 +1,344 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100% !important;
+  height: 100%;
+}
+.body-container {
+  background-color: rgba(0, 0, 0, 0.89);
+  height: 60vh;
+}
+.nav {
+  display: flex;
+
+  padding: 25px;
+  width: 100%;
+}
+.nav span,
+h3,
+h1,
+h5,
+p {
+  font-size: 25px;
+  color: antiquewhite;
+  word-spacing: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.nav img {
+  object-fit: contain;
+  width: 30px;
+  margin-right: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.content button {
+  background: transparent;
+  box-shadow: none;
+  color: aliceblue;
+  border: 2px solid grey;
+  padding: 5px;
+  width: 25%;
+}
+.content button:hover {
+  box-shadow: 0 0 8px 5px gray;
+}
+.content h1 {
+  font-size: 40px;
+}
+.content h3 {
+  color: gray;
+}
+.dropdown-content {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #0e0101b9;
+  height: 15%;
+  width: 18%;
+  justify-content: center;
+
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: 0.5 all ease-in-out;
+  margin-top: 10%;
+  border-radius: 10px;
+}
+.dropdown-content a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+.dropdown-content a:hover {
+  color: grey;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: all 1ms ease-in;
+}
+.show {
+  visibility: visible;
+  transition: 0.5 all ease-in-out;
+}
+.social-media {
+  display: flex;
+}
+.social-media img {
+  width: 40px;
+  object-fit: contain;
+  margin-top: 25%;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+.about {
+  display: flex;
+  margin-top: 10%;
+  flex-direction: column;
+}
+.about #ab,
+span {
+  text-align: center;
+  color: gray;
+  padding: 2px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.about h4 {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-left: 5%;
+}
+.profile-photo img {
+  width: 15%;
+  object-fit: contain;
+}
+.profile-photo p {
+  font-size: 20px;
+  color: #888888;
+  margin-left: 15px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profile h3,
+span {
+  margin-top: 10%;
+  margin-left: 5px;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial,
+    sans-serif
+      ";
+}
+.profile .profile-def {
+  color: #888888;
+  text-align: center;
+  font-size: 25px;
+  font-family: "
+      Trebuchet MS ", " Lucida Sans Unicode ", " Lucida Grande ",
+    " Lucida
+      Sans ", Arial, sans-serif";
+}
+
+.sub-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+.sub-content label {
+  color: black;
+  font-weight: bolder;
+}
+.sub-content p {
+  font-size: medium;
+  color: gray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.skills h2 {
+  text-align: center;
+}
+.skills p {
+  text-align: center;
+  color: gray;
+  font-size: large;
+}
+.skills button {
+  margin-top: 5%;
+  width: 50%;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.788);
+  color: antiquewhite;
+  padding: 15px;
+  font-size: large;
+}
+.skills button:hover {
+  background-color: black;
+}
+.button-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.educations label {
+  margin-left: 5%;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  margin-top: 5px;
+}
+.educations .progress {
+  margin-left: 5%;
+  height: 15px;
+}
+.footer {
+  background-color: rgba(128, 128, 128, 0.253);
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer h4,
+span {
+  margin-top: 10%;
+  text-align: center;
+  color: gray;
+}
+.footer h5 {
+  color: black;
+  text-align: center;
+}
+.footer p {
+  text-align: center;
+  color: #7d7d7d;
+  font-size: medium;
+  padding: 5%;
+}
+
+.qualification {
+  display: flex;
+  flex-direction: column;
+}
+.qualification h3 {
+  color: black;
+  text-align: center;
+}
+.sub-qualification {
+  display: flex;
+  padding: 5%;
+}
+.sub-qualification h3 {
+  font-size: medium;
+
+  color: black;
+}
+.sub-qualification img {
+  width: 10%;
+  object-fit: contain;
+  margin-left: 10px;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.portfolio h3 {
+  font-size: 20px;
+  font-family: monospace;
+}
+.portfolio h1 {
+  font-family: monospace;
+}
+.portfolio p {
+  font-size: medium;
+  padding: 10px;
+  text-align: center;
+  color: gray;
+}
+
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  padding: 5px;
+}
+.row img:hover {
+  filter: blur(2px);
+  transition: all 0ms ease-in-out;
+  cursor: pointer;
+}
+.col-sms img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 25%;
+}
+.contact {
+  margin-top: 15%;
+  background-color: black;
+}
+.contact .form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  width: 90%;
+}
+.contact .form input {
+  margin-bottom: 10px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background: transparent;
+  margin-top: 10px;
+}
+.contact .form button {
+  margin-top: 3%;
+  border: 0px solid;
+  align-self: center;
+  width: 35%;
+  padding: 5px;
+  background-color: #ff0077;
+}
+.contact .form button:hover {
+  background-color: grey;
+}
+.end {
+  margin-top: 10px;
+}
+.end p {
+  color: grey;
+}
